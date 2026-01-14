@@ -22,8 +22,8 @@ app.use(
   })
 );
 
-app.use("/user", userRouter);
-app.use("/tasks", taskRouter);
+app.use("/api/user", userRouter);
+app.use("/api/tasks", taskRouter);
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
